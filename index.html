@@ -3,28 +3,188 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>College Fair Collective</title>
-  <link rel="stylesheet" href="/css/styles.css">
+  <title>College Fair Collaborative - Connecting Students to Their Perfect Institution</title>
+  <meta name="description" content="We coordinate targeted college fairs across the nation, bridging the gap between specialized institutions and the students looking for them.">
+  <link rel="icon" type="image/svg+xml" href="/images/cfc-logo.svg">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <header>
-    <h1>College Fair Collective</h1>
-    <p>Coming Soon</p>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="/" class="logo">
+        <img src="/images/cfc-logo.svg" alt="CFC" class="logo-icon">
+        <span>College Fair Collaborative</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/planners.html">For Planners</a></li>
+        <li><a href="/coordinators.html">For Coordinators</a></li>
+        <li><a href="/colleges.html">For Colleges</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="mobile-menu-btn" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="/planners.html">For Conference/Event Planners</a>
+      <a href="/coordinators.html">For Fair Coordinators</a>
+      <a href="/colleges.html">For Colleges</a>
+      <a href="#contact" onclick="toggleMenu()">Contact</a>
+    </div>
   </header>
 
-  <main>
-    <section id="contact">
-      <h2>Get in Touch</h2>
-      <form id="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-      <p id="form-status"></p>
-    </section>
-  </main>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="badge">Now coordinating Fall 2026 Fairs</span>
+        <h1>
+          Connecting<br>
+          Students to Their<br>
+          <span class="gradient">Perfect Institution</span>
+        </h1>
+        <p>We coordinate targeted college fairs across the nation, bridging the gap between specialized institutions and the students looking for them.</p>
+        <div class="hero-buttons">
+          <a href="/schedule.html" class="btn btn-primary btn-lg">Find a Fair</a>
+          <a href="/colleges.html" class="btn btn-outline btn-lg">For Universities</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="/images/CFCfair3.jpg" alt="Students at a college fair">
+        <div class="hero-image-caption">
+          <p>National Catholic College Fair</p>
+          <p>Chicago, IL - Oct 12</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <script src="/js/main.js"></script>
+  <!-- Features Section -->
+  <section class="section section-muted">
+    <div class="container">
+      <div class="section-header">
+        <h2>Targeted Connections, Real Results</h2>
+        <p>We don't just host events; we curate experiences that bring the right people together.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="card">
+          <div class="card-image">
+            <img src="/images/CFCFair2.webp" alt="Targeted Fairs">
+          </div>
+          <div class="card-content">
+            <div class="card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+            </div>
+            <h3>Targeted Fairs</h3>
+            <p>Specialized events for Catholic, Private Faith-Based, and Out-of-State universities.</p>
+            <a href="/colleges.html" class="btn btn-outline">Learn more</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="/images/CFCfair4.png" alt="Nationwide Reach">
+          </div>
+          <div class="card-content">
+            <div class="card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+            </div>
+            <h3>Nationwide Reach</h3>
+            <p>Coordinating events in major metropolitan areas and underserved regions alike.</p>
+            <a href="/planners.html" class="btn btn-outline">Learn more</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="/images/CFCFair1.webp" alt="Seamless Collaboration">
+          </div>
+          <div class="card-content">
+            <div class="card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+            </div>
+            <h3>Seamless Collaboration</h3>
+            <p>We handle the logistics, marketing, and coordination so you can focus on recruiting.</p>
+            <a href="/coordinators.html" class="btn btn-outline">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="section section-primary">
+    <div class="container">
+      <div class="stats-grid">
+        <div>
+          <div class="stat-value">120+</div>
+          <div class="stat-label">Fairs Hosted</div>
+        </div>
+        <div>
+          <div class="stat-value">500+</div>
+          <div class="stat-label">Universities</div>
+        </div>
+        <div>
+          <div class="stat-value">50k+</div>
+          <div class="stat-label">Students Reached</div>
+        </div>
+        <div>
+          <div class="stat-value">35+</div>
+          <div class="stat-label">States Covered</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="cta">
+        <h2>Ready to Connect?</h2>
+        <p>Join the College Fair Collaborative network today. Whether you're a university looking to recruit or a high school planning an event, we're here to help.</p>
+        <form id="contact-form" class="contact-form">
+          <input type="email" name="email" placeholder="Enter your email address" required>
+          <button type="submit" class="btn btn-primary">Get in Touch</button>
+        </form>
+        <p class="form-note">*No spam. Unsubscribe anytime.</p>
+        <div id="form-status" class="form-status"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="logo">
+            <img src="/images/cfc-logo.svg" alt="CFC" class="logo-icon">
+            <span>College Fair Collaborative</span>
+          </a>
+          <p>Coordinating targeted college fairs across the nation to connect students with their future.</p>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="/planners.html">For Conference/Event Planners</a></li>
+            <li><a href="/coordinators.html">For Fair Coordinators</a></li>
+            <li><a href="/colleges.html">For Colleges</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>info@collegefaircollab.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 College Fair Collaborative. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="/main.js"></script>
 </body>
 </html>
