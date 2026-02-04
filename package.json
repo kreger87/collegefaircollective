@@ -1,0 +1,7 @@
+{
+  "name": "collegefaircollective",
+  "private": true,
+  "dependencies": {
+    "resend": "^2.0.0"
+  }
+}
