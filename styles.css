@@ -1,3 +1,6 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap');
+
 /* CSS Reset & Base */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -11,13 +14,15 @@
   --primary-light: #4FD1C5;
   --secondary: #805AD5;
   --accent: #ED8936;
+  --soft-sage: #9AE6B4;
+  --coral: #FC8181;
   --background: #ffffff;
-  --foreground: #1a202c;
+  --foreground: #2D3748;
   --muted: #f7fafc;
   --muted-foreground: #718096;
   --border: #e2e8f0;
   --card: #ffffff;
-  --radius: 0.75rem;
+  --radius: 1rem;
 }
 
 html {
@@ -25,13 +30,14 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.6;
   color: var(--foreground);
   background: var(--background);
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   line-height: 1.2;
 }
