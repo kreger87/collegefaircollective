@@ -49,7 +49,7 @@ export default async function handler(req, res) {
   try {
     await resend.emails.send({
       from: 'forms@collegefaircollective.org',
-      to: 'info@collegefaircollab.com',
+      to: 'info@collegefaircollaborative.org',
       replyTo: email,
       subject: subject,
       html: htmlContent,
