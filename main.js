@@ -74,7 +74,7 @@ if (contactForm) {
   });
 }
 
-// Full contact form (on partner page)
+// Full contact form (on contact page)
 const fullContactForm = document.getElementById('full-contact-form');
 if (fullContactForm) {
   fullContactForm.addEventListener('submit', async function(e) {
@@ -82,6 +82,12 @@ if (fullContactForm) {
 
     const formData = new FormData(this);
     const data = Object.fromEntries(formData);
+    // Combine first/last name for the API
+    if (data.first_name || data.last_name) {
+      data.name = [data.first_name, data.last_name].filter(Boolean).join(' ');
+      delete data.first_name;
+      delete data.last_name;
+    }
     const status = document.getElementById('full-form-status');
     const btn = this.querySelector('button[type="submit"]');
     const originalText = btn.textContent;
